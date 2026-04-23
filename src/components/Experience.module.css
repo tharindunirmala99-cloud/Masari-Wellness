@@ -1,0 +1,104 @@
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 540px;
+}
+
+.imagePanel {
+  background: url('https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=1000&q=80') center / cover no-repeat;
+  min-height: 400px;
+}
+
+.contentPanel {
+  background: var(--gold-pale);
+  padding: 6rem 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.contentPanel.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.eyebrow {
+  font-size: 0.68rem;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 1rem;
+}
+.title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  font-weight: 300;
+  line-height: 1.2;
+  color: var(--dark-mid);
+  letter-spacing: 0.02em;
+  margin-bottom: 1.5rem;
+}
+.title em { font-style: italic; color: var(--gold); }
+
+.divider {
+  width: 48px;
+  height: 1px;
+  background: var(--gold);
+  margin-bottom: 2rem;
+}
+
+.list {
+  list-style: none;
+}
+.listItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--border);
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.listItem:first-child { border-top: 1px solid var(--border); }
+.listItem.itemVisible {
+  opacity: 1;
+  transform: none;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-size: 0.75rem;
+  margin-top: 3px;
+}
+
+.listItem strong {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--dark);
+  margin-bottom: 3px;
+}
+.listItem span {
+  font-size: 0.82rem;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .section { grid-template-columns: 1fr; }
+  .imagePanel { min-height: 300px; }
+  .contentPanel { padding: 5rem 5vw; }
+}

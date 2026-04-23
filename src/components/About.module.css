@@ -1,0 +1,125 @@
+.about {
+  background: var(--cream);
+  padding: 7rem 5vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.about.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.imageWrap {
+  position: relative;
+}
+.img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+.badge {
+  position: absolute;
+  top: 2rem;
+  left: -2.5rem;
+  background: var(--gold);
+  color: var(--dark);
+  padding: 1.5rem 1.4rem;
+  text-align: center;
+  z-index: 1;
+}
+.badgeNum {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 1;
+}
+.badgeLabel {
+  display: block;
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-top: 6px;
+  line-height: 1.5;
+}
+.accent {
+  position: absolute;
+  bottom: -2rem;
+  right: -2rem;
+  width: 52%;
+  aspect-ratio: 1;
+  border: 1px solid var(--gold);
+  z-index: 0;
+}
+
+.eyebrow {
+  font-size: 0.68rem;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 1rem;
+}
+.title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3.5vw, 2.9rem);
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+  margin-bottom: 1.5rem;
+}
+.title em { font-style: italic; color: var(--gold); }
+
+.divider {
+  width: 48px;
+  height: 1px;
+  background: var(--gold);
+  margin-bottom: 1.5rem;
+}
+.desc {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.85;
+  max-width: 520px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border);
+}
+.statNum {
+  font-family: var(--font-serif);
+  font-size: 2.3rem;
+  font-weight: 300;
+  color: var(--gold);
+  line-height: 1;
+}
+.statLabel {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 5px;
+}
+
+@media (max-width: 900px) {
+  .about {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 5rem 5vw;
+  }
+  .badge { left: 0; }
+  .accent { display: none; }
+}

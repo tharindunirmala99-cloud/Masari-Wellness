@@ -1,0 +1,152 @@
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  height: var(--nav-height);
+  background: rgba(26, 22, 18, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(184, 149, 106, 0.12);
+  transition: height 0.3s ease, background 0.3s ease;
+}
+
+.scrolled {
+  height: 60px;
+  background: rgba(26, 22, 18, 0.97);
+}
+
+.logo {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  color: var(--gold-light);
+  white-space: nowrap;
+}
+.logo span {
+  color: rgba(212, 175, 135, 0.45);
+}
+
+.links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+.links button {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(240, 234, 224, 0.7);
+  transition: color 0.2s;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.links button:hover {
+  color: var(--gold-light);
+}
+
+.bookBtn {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--dark);
+  background: var(--gold);
+  padding: 0.6rem 1.6rem;
+  transition: background 0.2s;
+  white-space: nowrap;
+  border: none;
+  cursor: pointer;
+}
+.bookBtn:hover {
+  background: var(--gold-light);
+}
+
+.toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.toggle span {
+  display: block;
+  width: 22px;
+  height: 1px;
+  background: var(--gold-light);
+  transition: transform 0.3s, opacity 0.3s;
+  transform-origin: center;
+}
+.toggleOpen span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.toggleOpen span:nth-child(2) { opacity: 0; }
+.toggleOpen span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+/* Mobile menu */
+.mobileMenu {
+  position: fixed;
+  top: var(--nav-height);
+  left: 0; right: 0;
+  background: rgba(26, 22, 18, 0.98);
+  backdrop-filter: blur(14px);
+  z-index: 99;
+  padding: 2.5rem 5vw;
+  border-top: 1px solid rgba(184, 149, 106, 0.12);
+  transform: translateY(-110%);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+.mobileOpen {
+  transform: translateY(0);
+  pointer-events: all;
+}
+.mobileMenu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  margin-bottom: 2.5rem;
+}
+.mobileMenu ul button {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(240, 234, 224, 0.8);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s;
+}
+.mobileMenu ul button:hover { color: var(--gold); }
+.mobileBook {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--dark);
+  background: var(--gold);
+  padding: 0.85rem 2.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: inline-block;
+}
+.mobileBook:hover { background: var(--gold-light); }
+
+@media (max-width: 900px) {
+  .links, .bookBtn { display: none; }
+  .toggle { display: flex; }
+}
