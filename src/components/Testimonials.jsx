@@ -6,7 +6,7 @@ const testimonials = [
     initials: 'AM',
     name: 'Amara Mendis',
     location: 'Colombo, Sri Lanka',
-    text: 'The Serenity Signature package was transformative. I walked in exhausted and walked out feeling genuinely reborn. The therapist was exceptional.',
+    text: 'The Masari Wellness and Signature package was transformative. I walked in exhausted and walked out feeling genuinely reborn. The therapist was exceptional.',
   },
   {
     initials: 'RF',
@@ -18,7 +18,7 @@ const testimonials = [
     initials: 'NK',
     name: 'Nadia Kruger',
     location: 'Visiting from Singapore',
-    text: 'As a regular spa-goer across Asia, Serenity is genuinely world-class. The hot stone therapy here rivals any five-star resort I have visited.',
+    text: 'As a regular spa-goer across Asia, Masari Wellness and is genuinely world-class. The hot stone therapy here rivals any five-star resort I have visited.',
   },
 ]
 

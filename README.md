@@ -1,4 +1,4 @@
-# Serenity Spa & Wellness — React SPA
+# Masari Wellness and Spa & Wellness — React SPA
 
 A full static SPA website built with **React 18 + Vite + CSS Modules**.
 

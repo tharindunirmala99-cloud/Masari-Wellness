@@ -22,7 +22,7 @@ export default function Navbar() {
     <>
       <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
         <a href="#hero" className={styles.logo} onClick={e => { e.preventDefault(); handleNav('hero') }}>
-          SERENITY <span>SPA</span>
+          MASARI WELLNESS AND  <span>SPA</span>
         </a>
 
         <ul className={styles.links}>

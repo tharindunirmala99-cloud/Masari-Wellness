@@ -24,7 +24,7 @@ const hours = [
 
 const services = [
   { group: 'Treatments', items: ['Balinese Massage', 'Luxury Facial', 'Hot Stone Therapy', 'Body Scrub & Wrap', 'Reflexology'] },
-  { group: 'Packages', items: ['The Relaxation Ritual', 'The Serenity Signature', "Couple's Retreat"] },
+  { group: 'Packages', items: ['The Relaxation Ritual', 'The Masari Wellness and Signature', "Couple's Retreat"] },
 ]
 
 export default function Contact() {
@@ -43,7 +43,7 @@ export default function Contact() {
     Object.entries(form).forEach(([k, v]) => data.append(k, v))
     data.append('access_key', import.meta.env.VITE_WEB3FORMS_ACCESS_KEY)
     data.append('subject', 'New Spa Enquiry — Serenity Spa')
-    data.append('from_name', 'Serenity Spa Website')
+    data.append('from_name', 'Masari Wellness and Spa Website')
     try {
       const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: data })
       const json = await res.json()

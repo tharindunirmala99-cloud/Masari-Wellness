@@ -42,7 +42,7 @@ SNYK_TOKEN             # Optional: Snyk security scanning token
 Create `.env.production`:
 ```env
 VITE_SENTRY_DSN=your-sentry-dsn
-VITE_APP_TITLE=Serenity Spa
+VITE_APP_TITLE=Masari Wellness and Spa
 ```
 
 ## Deployment Workflow

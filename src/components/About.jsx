@@ -44,7 +44,7 @@ export default function About() {
         </h2>
         <div className={styles.divider} />
         <p className={styles.desc}>
-          Serenity Spa was founded on the belief that true wellness goes beyond the surface. Drawing from Ayurvedic wisdom, Balinese healing traditions and contemporary science, every treatment is a ritual crafted to restore balance and awaken the senses.
+          Masari Wellness and Spa was founded on the belief that true wellness goes beyond the surface. Drawing from Ayurvedic wisdom, Balinese healing traditions and contemporary science, every treatment is a ritual crafted to restore balance and awaken the senses.
         </p>
         <p className={styles.desc} style={{ marginTop: '1rem' }}>
           Nestled in the heart of Colombo, our sanctuary is a refuge from the city's rhythm — where time slows, and every detail is designed for your deepest restoration.

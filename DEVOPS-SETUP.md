@@ -1,4 +1,4 @@
-# Serenity Spa - DevOps Implementation
+# Masari Wellness and Spa - DevOps Implementation
 
 ## Quick Start
 
@@ -113,13 +113,13 @@ SNYK_TOKEN                # Optional security scanning
 Create `.env.production`:
 ```env
 VITE_SENTRY_DSN=your-dsn-here
-VITE_APP_TITLE=Serenity Spa
+VITE_APP_TITLE=Masari Wellness and Spa
 ```
 
 ## Project Structure
 
 ```
-serenity-spa/
+Masari Wellness and-spa/
 ├── .github/workflows/     # GitHub Actions CI/CD
 │   ├── ci.yml             # Lint, test, build, security
 │   └── deploy.yml         # Deploy to Netlify

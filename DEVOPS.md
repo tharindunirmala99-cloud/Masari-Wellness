@@ -1,6 +1,6 @@
 # DevOps Guidelines
 
-This document outlines the DevOps practices, CI/CD pipeline, and deployment strategy for Serenity Spa.
+This document outlines the DevOps practices, CI/CD pipeline, and deployment strategy for Masari Wellness and Spa.
 
 ## Architecture Overview
 

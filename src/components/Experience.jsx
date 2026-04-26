@@ -37,7 +37,7 @@ export default function Experience() {
     <section id="experience" className={styles.section} ref={ref}>
       <div className={styles.imagePanel} />
       <div className={`${styles.contentPanel} ${visible ? styles.visible : ''}`}>
-        <span className={styles.eyebrow}>The Serenity Difference</span>
+        <span className={styles.eyebrow}>The Masari Wellness and Difference</span>
         <h2 className={styles.title}>
           Every Detail<br />Considered <em>for You</em>
         </h2>

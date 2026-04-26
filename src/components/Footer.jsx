@@ -9,7 +9,7 @@ export default function Footer() {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.logo}>SERENITY SPA & WELLNESS</div>
+      <div className={styles.logo}>Masari Wellness and SPA & WELLNESS</div>
       <ul className={styles.links}>
         {footerLinks.map(l => (
           <li key={l}>
@@ -17,7 +17,7 @@ export default function Footer() {
           </li>
         ))}
       </ul>
-      <div className={styles.copy}>© 2026 Serenity Spa & Wellness. All rights reserved.</div>
+      <div className={styles.copy}>© 2026 Masari Wellness and Spa & Wellness. All rights reserved.</div>
     </footer>
   )
 }
