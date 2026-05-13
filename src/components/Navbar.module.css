@@ -1,6 +1,8 @@
 .nav {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
   display: flex;
   align-items: center;
@@ -27,8 +29,15 @@
   color: var(--gold-light);
   white-space: nowrap;
 }
+
 .logo span {
   color: rgba(212, 175, 135, 0.45);
+}
+
+.logoImg {
+  height: 40px;
+  width: auto;
+  margin-right: 1rem;
 }
 
 .links {
@@ -36,6 +45,7 @@
   gap: 2.5rem;
   list-style: none;
 }
+
 .links button {
   font-family: var(--font-sans);
   font-size: 0.68rem;
@@ -49,6 +59,7 @@
   border: none;
   cursor: pointer;
 }
+
 .links button:hover {
   color: var(--gold-light);
 }
@@ -67,6 +78,7 @@
   border: none;
   cursor: pointer;
 }
+
 .bookBtn:hover {
   background: var(--gold-light);
 }
@@ -80,6 +92,7 @@
   border: none;
   cursor: pointer;
 }
+
 .toggle span {
   display: block;
   width: 22px;
@@ -88,15 +101,25 @@
   transition: transform 0.3s, opacity 0.3s;
   transform-origin: center;
 }
-.toggleOpen span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
-.toggleOpen span:nth-child(2) { opacity: 0; }
-.toggleOpen span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+.toggleOpen span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.toggleOpen span:nth-child(2) {
+  opacity: 0;
+}
+
+.toggleOpen span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
 
 /* Mobile menu */
 .mobileMenu {
   position: fixed;
   top: var(--nav-height);
-  left: 0; right: 0;
+  left: 0;
+  right: 0;
   background: rgba(26, 22, 18, 0.98);
   backdrop-filter: blur(14px);
   z-index: 99;
@@ -106,10 +129,12 @@
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   pointer-events: none;
 }
+
 .mobileOpen {
   transform: translateY(0);
   pointer-events: all;
 }
+
 .mobileMenu ul {
   list-style: none;
   display: flex;
@@ -117,6 +142,7 @@
   gap: 1.75rem;
   margin-bottom: 2.5rem;
 }
+
 .mobileMenu ul button {
   font-family: var(--font-sans);
   font-size: 0.9rem;
@@ -130,7 +156,11 @@
   padding: 0;
   transition: color 0.2s;
 }
-.mobileMenu ul button:hover { color: var(--gold); }
+
+.mobileMenu ul button:hover {
+  color: var(--gold);
+}
+
 .mobileBook {
   font-family: var(--font-sans);
   font-size: 0.72rem;
@@ -144,9 +174,19 @@
   transition: background 0.2s;
   display: inline-block;
 }
-.mobileBook:hover { background: var(--gold-light); }
+
+.mobileBook:hover {
+  background: var(--gold-light);
+}
 
 @media (max-width: 900px) {
-  .links, .bookBtn { display: none; }
-  .toggle { display: flex; }
+
+  .links,
+  .bookBtn {
+    display: none;
+  }
+
+  .toggle {
+    display: flex;
+  }
 }

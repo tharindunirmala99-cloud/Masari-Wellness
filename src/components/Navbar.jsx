@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import styles from './Navbar.module.css'
+import logo from '../assets/images/Logo/Masari Logo Approved-02.png'
 
 const links = ['About', 'Treatments', 'Packages', 'Experience', 'Testimonials', 'Contact']
 
@@ -21,6 +22,9 @@ export default function Navbar() {
   return (
     <>
       <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
+
+        <img src={logo} alt="Logo" className={styles.logoImg} />
+
         <a href="#hero" className={styles.logo} onClick={e => { e.preventDefault(); handleNav('hero') }}>
           MASARI WELLNESS AND  <span>SPA</span>
         </a>
